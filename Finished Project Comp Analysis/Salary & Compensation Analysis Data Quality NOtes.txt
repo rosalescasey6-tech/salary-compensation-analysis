@@ -1,0 +1,27 @@
+Salary & Compensation Analysis: Data Quality Notes
+
+ Data Quality Issues Identified
+
+During the analysis, several potential data-quality issues were identified:
+
+- Missing values:** Some records have missing experience-year information.
+- Potential salary outliers:** Base salaries of $450,000 and $1,000 were flagged for investigation.
+- Unknown education:** Some records have an education level listed as “Unknown.”
+- Compensation mismatches:** Four records had total compensation values that did not equal base salary plus bonus.
+
+Handling Decisions
+
+- Missing experience values were excluded from analyses requiring experience data.
+- Potential salary outliers were retained pending further investigation.
+- Unknown education values were kept as a separate category.
+- Compensation mismatches were flagged rather than automatically corrected.
+
+Limitations
+
+Unusual salary values and unresolved compensation mismatches may affect summary statistics and visualizations. Findings should be interpreted with these limitations in mind.
+
+Tools Used
+
+- Excel: Data cleaning, PivotTables, and charts
+- SQL (SQLite): Filtering, aggregation, grouping, sorting, and joins
+- Power BI: Compensation dashboard and visual analysis
